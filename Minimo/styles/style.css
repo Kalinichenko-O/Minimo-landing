@@ -1,3 +1,62 @@
+@font-face {
+  font-family: Inconsolata;
+  src: url('./fonts/Inconsolata/Inconsolata-Regular.woff2') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Playfair Display;
+  src: url('./fonts/PlayfairDisplay-woff2/PlayfairDisplay-Italic.woff2'),
+    ('./fonts/PlayfairDisplay-woff/PlayfairDisplay-Italic.woff')
+      format('truetype');
+  font-weight: italic;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Playfair Display;
+  src: url('./fonts/PlayfairDisplay-woff2/PlayfairDisplay-Regular.woff2'),
+    ('./fonts/PlayfairDisplay-woff/PlayfairDisplay-Regular.woff')
+      format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Playfair Display;
+  src: url('./fonts/PlayfairDisplay-woff2/PlayfairDisplay-Bold.woff2'),
+    ('./fonts/PlayfairDisplay-woff/PlayfairDisplay-Bold.woff')
+      format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url('./fonts/Ubuntu-woff2/Ubuntu-Light.woff2'),
+    ('./fonts/Ubuntu-woff/Ubuntu-Light.woff') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url('./fonts/Ubuntu-woff2/Ubuntu-Regular.woff2'),
+    ('./fonts/Ubuntu-woff/Ubuntu-Regular.woff') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url('./fonts/Ubuntu-woff2/Ubuntu-Bold.woff2'),
+    ('./fonts/Ubuntu-woff/Ubuntu-Bold.woff') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   font-family: 'Playfair Display', serif;
@@ -6,54 +65,53 @@ html {
   scroll-behavior: smooth;
 }
 .container {
-  max-width: 1062px;
   margin: 0 auto;
   padding: 0 10px;
+  max-width: 1062px;
 }
 .container__small {
-  max-width: 900px;
   margin: 0 auto;
   padding: 0 10px;
+  max-width: 900px;
 }
 .head {
   display: flex;
-  justify-content: space-between;
   margin: 76px auto;
+  justify-content: space-between;
 }
 .nav {
-  display: flex;
-  justify-content: space-between;
-  max-width: 570px;
   width: 100%;
+  display: flex;
+  max-width: 570px;
+  justify-content: space-between;
 }
 .nav__item-text.logo {
   font-size: 30px;
-  letter-spacing: 6px;
-  line-height: 24px;
-  text-transform: uppercase;
+  cursor: pointer;
   color: #000000;
   font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
   font-family: 'Inconsolata';
-  cursor: pointer;
 }
 .nav__item-text {
   font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
+  cursor: pointer;
   color: #626262;
   font-weight: 400;
-  font-family: 'Playfair Display';
+  line-height: 24px;
   text-align: center;
-  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Playfair Display';
 }
-/* -----------------SLIDER-------------------------------- */
 .slider {
   text-align: center;
   margin-bottom: 96px;
 }
 .slider__item {
-  max-width: 1062px;
   width: 100%;
+  max-width: 1062px;
   max-height: 509px;
 }
 .slider__wrapper {
@@ -61,31 +119,30 @@ html {
   margin-bottom: 96px;
 }
 .arrow {
-  cursor: pointer;
-  border-style: solid;
-  position: absolute;
   top: 50%;
+  cursor: pointer;
   margin-top: -35px;
+  position: absolute;
+  border-style: solid;
 }
 #arrow-left {
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #fff transparent #fff;
   left: 0;
   margin-left: 20px;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent #fff;
 }
 #arrow-right {
-  border-width: 10px 0 10px 10px;
-  border-color: transparent #fff transparent #fff;
   right: 0;
   margin-right: 20px;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent #fff transparent #fff;
 }
-/* ------------------------------- */
 .photodiary__wrapper {
-  display: flex;
-  max-width: 1062px;
   width: 100%;
-  justify-content: space-between;
+  display: flex;
   column-gap: 10px;
+  max-width: 1062px;
+  justify-content: space-between;
 }
 .photodiary {
   max-width: 659px;
@@ -93,31 +150,31 @@ html {
 }
 .photodiary__subtitle {
   font-size: 14px;
-  text-transform: uppercase;
-  color: #b4ad9e;
   font-weight: 300;
+  color: #b4ad9e;
   font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .photodiary__title {
   font-size: 30px;
   color: #626262;
   font-weight: 400;
-  font-family: 'Playfair Display';
-  margin-bottom: 30px;
   margin-top: 25px;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display';
 }
 .photodiary__textContent {
   font-size: 14px;
-  line-height: 24px;
   color: #626262;
   font-weight: 400;
+  line-height: 24px;
   font-family: 'Playfair Display';
 }
 .photodiary__textContent-span {
   font-size: 14px;
-  line-height: 24px;
   color: #626262;
   font-weight: 700;
+  line-height: 24px;
   font-family: 'Playfair Display';
 }
 .album {
@@ -130,33 +187,33 @@ html {
   margin-bottom: 55px;
 }
 .album__img {
-  max-width: 660px;
   width: 100%;
+  max-width: 660px;
 }
 .description__coments {
   font-size: 14px;
-  line-height: 24px;
   color: #626262;
   font-weight: 400;
+  line-height: 24px;
   font-style: italic;
-  font-family: 'Playfair Display';
   margin-bottom: 38px;
+  font-family: 'Playfair Display';
 }
 .description__text {
   font-size: 14px;
-  line-height: 24px;
   color: #626262;
   font-weight: 400;
+  line-height: 24px;
   font-family: 'Playfair Display';
 }
 .description__text-black {
   font-weight: 700;
 }
 .social-link {
-  margin-top: 105px;
   display: flex;
-  justify-content: flex-end;
+  margin-top: 105px;
   margin-bottom: 120px;
+  justify-content: flex-end;
 }
 .social-link__item {
   margin-right: 16px;
@@ -166,39 +223,39 @@ html {
 }
 .social-link__share {
   font-size: 13px;
-  line-height: 24px;
-  text-transform: uppercase;
   color: #b4ad9e;
   font-weight: 300;
+  line-height: 24px;
   font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .aside__container {
-  max-width: 272px;
   width: 100%;
+  max-width: 272px;
 }
 .aside__about {
-  position: sticky;
   top: 0;
+  position: sticky;
 }
 .aside__title {
+  margin: 19px 0;
   font-size: 24px;
-  line-height: 20px;
   color: #626262;
   font-weight: 400;
+  line-height: 20px;
   font-family: 'Playfair Display';
-  margin: 19px 0;
 }
 .about__img {
-  max-width: 272px;
   width: 100%;
+  max-width: 272px;
 }
 .aside__text {
   font-size: 12px;
-  line-height: 20px;
-  color: #626262;
   font-weight: 400;
-  font-family: 'Playfair Display';
+  color: #626262;
+  line-height: 20px;
   margin-bottom: 23px;
+  font-family: 'Playfair Display';
 }
 .aside__contacts-icon {
   margin-right: 16px;
@@ -208,23 +265,23 @@ html {
 }
 .posts__title {
   font-size: 14px;
-  text-transform: uppercase;
   color: #b4ad9e;
   font-weight: 300;
-  font-family: 'Ubuntu';
   margin-bottom: 36px;
+  font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .posts-item__title {
   text-decoration: dotted;
 }
 .posts__item {
-  list-style: disc;
   height: 20px;
   font-size: 16px;
+  list-style: disc;
   color: #626262;
   font-weight: 400;
-  font-family: 'Playfair Display';
   margin-bottom: 49px;
+  font-family: 'Playfair Display';
 }
 .posts__item:last-child {
   margin-bottom: 55px;
@@ -235,46 +292,46 @@ html {
 .posts-item__qtycoments {
   margin-top: 9px;
   font-size: 12px;
-  text-transform: uppercase;
   color: #b4ad9e;
   font-weight: 300;
   font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .aside__baner {
-  max-width: 250px;
-  height: 250px;
   width: 100%;
-  background-image: url('./img/image8.png');
-  text-align: center;
+  height: 250px;
   display: flex;
-  justify-content: center;
+  max-width: 250px;
+  text-align: center;
   align-items: center;
+  justify-content: center;
+  background-image: url('./img/image8.png');
 }
 .baner__title {
   font-size: 48px;
-  text-transform: uppercase;
-  color: #ffffff;
   font-weight: 300;
-  font-family: 'Ubuntu';
+  color: #ffffff;
   text-align: center;
+  font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .baner__sub-title {
-  text-transform: uppercase;
   color: #ffffff;
   font-weight: 300;
   font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .section-background {
   background-color: #f5f5f5;
 }
 .memoirs-title {
   font-size: 14px;
-  text-transform: uppercase;
   color: #b4ad9e;
   font-weight: 300;
-  font-family: 'Ubuntu';
   padding-top: 68px;
   margin-bottom: 18px;
+  font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .memoirs__wrapper {
   display: flex;
@@ -292,43 +349,43 @@ html {
   font-size: 20px;
   color: #626262;
   font-weight: 400;
-  font-family: 'Playfair Display';
   padding-top: 18px;
   padding-bottom: 84px;
+  font-family: 'Playfair Display';
 }
 .coments__title {
   font-size: 14px;
-  text-transform: uppercase;
   color: #b4ad9e;
   font-weight: 300;
-  font-family: 'Ubuntu';
   margin-top: 66px;
   margin-bottom: 30px;
+  font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .coments__item {
   display: flex;
   margin-bottom: 50px;
 }
 .coments__avatar {
-  margin-right: 36px;
+  width: 70px;
+  height: 70px;
   font-size: 34px;
   color: #ffffff;
   font-weight: 300;
-  font-family: 'Ubuntu';
-  width: 70px;
-  height: 70px;
+  margin-right: 36px;
   border-radius: 35px;
+  font-family: 'Ubuntu';
   background-color: #cae5e0;
 }
 .coments__avatar-grey {
-  margin-right: 36px;
+  width: 70px;
+  height: 70px;
   font-size: 34px;
   color: #ffffff;
   font-weight: 300;
-  font-family: 'Ubuntu';
-  width: 70px;
-  height: 70px;
+  margin-right: 36px;
   border-radius: 35px;
+  font-family: 'Ubuntu';
   background-color: #ededea;
 }
 .avatar__content {
@@ -338,36 +395,36 @@ html {
   font-size: 14px;
   color: #626262;
   font-weight: 700;
-  font-family: 'Playfair Display';
   margin-bottom: 14px;
+  font-family: 'Playfair Display';
 }
 .coments__user-text {
   font-size: 14px;
-  line-height: 24px;
   color: #626262;
   font-weight: 400;
+  line-height: 24px;
   font-family: 'Playfair Display';
 }
 .coments__reply {
   font-size: 14px;
-  text-transform: uppercase;
   color: #b4ad9e;
   font-weight: 300;
-  font-family: 'Ubuntu';
   margin-top: 25px;
+  font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .coments__input {
   width: 100%;
-  border-radius: 5px;
   height: 70px;
+  border-radius: 5px;
   border: 1px solid #c8c8c8;
 }
 .coments__input::placeholder {
   font-size: 14px;
-  text-transform: uppercase;
   color: #c8c8c8;
   font-weight: 300;
   font-family: 'Ubuntu';
+  text-transform: uppercase;
   padding: 29px 0 31px 34px;
 }
 .coments__content {
@@ -375,17 +432,17 @@ html {
 }
 .conection {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 500px;
   align-items: center;
+  margin-bottom: 500px;
+  justify-content: flex-end;
 }
 .conection__title {
   font-size: 14px;
-  text-transform: uppercase;
   color: #b4ad9e;
   font-weight: 300;
-  font-family: 'Ubuntu';
   margin-right: 38px;
+  font-family: 'Ubuntu';
+  text-transform: uppercase;
 }
 .conection__icon:first-child {
   padding-right: 16px;
@@ -398,15 +455,15 @@ html {
 }
 .wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .fotter__rules {
   display: flex;
   column-gap: 17px;
   padding-top: 40px;
-  padding-bottom: 45px;
   margin-left: 88px;
+  padding-bottom: 45px;
 }
 .fotter__links {
   display: flex;
@@ -414,9 +471,9 @@ html {
 }
 .follow__title {
   font-size: 14px;
-  line-height: 24px;
   color: #000000;
   font-weight: 400;
+  line-height: 24px;
   font-family: 'Playfair Display';
 }
 .follow__icon {
@@ -427,20 +484,17 @@ html {
 }
 .fotter__text {
   font-size: 14px;
-  line-height: 24px;
   color: #000000;
   font-weight: 400;
+  line-height: 24px;
   font-family: 'Playfair Display';
 }
 .wrapper-section {
-  margin-left: 88px;
   max-width: 900px;
+  margin-left: 88px;
 }
 
 @media only screen and (max-width: 600px) {
-  .example {
-    background: red;
-  }
   .head {
     margin: 40px auto;
   }
@@ -535,8 +589,8 @@ html {
     font-size: 12px;
   }
   .fotter__rules {
-    padding: 20px 0;
     margin-left: 0;
+    padding: 20px 0;
   }
   .fotter__text {
     font-size: 12px;
@@ -552,18 +606,13 @@ html {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .example {
-    background: green;
-  }
   .head {
     margin: 40px auto;
   }
   .slider__wrapper {
     margin-bottom: 50px;
   }
-
   .album {
     margin-top: 53px;
     padding-right: 10px;
@@ -573,9 +622,6 @@ html {
   }
   .social-link {
     margin: 50px 0;
-  }
-  .memoirs__wrapper {
-    /* justify-content: center; */
   }
   .memoirs__item {
     margin-right: 20px;
@@ -594,11 +640,7 @@ html {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .example {
-    background: blue;
-  }
   .photodiary {
     margin-left: 88px;
   }
@@ -606,19 +648,8 @@ html {
     margin-left: 88px;
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .example {
-    background: orange;
-  }
   .photodiary {
     margin-left: 88px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {
-    background: pink;
   }
 }

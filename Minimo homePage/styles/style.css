@@ -1,3 +1,62 @@
+@font-face {
+  font-family: Inconsolata;
+  src: url('./fonts/Inconsolata/Inconsolata-Regular.woff2') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Playfair Display;
+  src: url('./fonts/PlayfairDisplay-woff2/PlayfairDisplay-Italic.woff2'),
+    ('./fonts/PlayfairDisplay-woff/PlayfairDisplay-Italic.woff')
+      format('truetype');
+  font-weight: italic;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Playfair Display;
+  src: url('./fonts/PlayfairDisplay-woff2/PlayfairDisplay-Regular.woff2'),
+    ('./fonts/PlayfairDisplay-woff/PlayfairDisplay-Regular.woff')
+      format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Playfair Display;
+  src: url('./fonts/PlayfairDisplay-woff2/PlayfairDisplay-Bold.woff2'),
+    ('./fonts/PlayfairDisplay-woff/PlayfairDisplay-Bold.woff')
+      format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url('./fonts/Ubuntu-woff2/Ubuntu-Light.woff2'),
+    ('./fonts/Ubuntu-woff/Ubuntu-Light.woff') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url('./fonts/Ubuntu-woff2/Ubuntu-Regular.woff2'),
+    ('./fonts/Ubuntu-woff/Ubuntu-Regular.woff') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url('./fonts/Ubuntu-woff2/Ubuntu-Bold.woff2'),
+    ('./fonts/Ubuntu-woff/Ubuntu-Bold.woff') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   font-family: 'Playfair Display', serif;
@@ -46,7 +105,6 @@ html {
   text-align: center;
   cursor: pointer;
 }
-/* -----------------SLIDER-------------------------------- */
 .slider {
   text-align: center;
   margin-bottom: 96px;
@@ -79,7 +137,6 @@ html {
   right: 0;
   margin-right: 20px;
 }
-/* ------------------------------- */
 .photodiary__wrapper {
   display: flex;
   max-width: 1062px;
@@ -179,6 +236,9 @@ html {
 .form-container {
   display: flex;
   position: relative;
+  max-width: 358px;
+  width: 100%;
+  margin: 0 auto;
 }
 .input__email {
   border: none;
@@ -206,7 +266,7 @@ html {
 .submit-btn__errow {
   position: absolute;
   bottom: 82px;
-  right: 275px;
+  right: 0;
   background-image: url(./img/icons/sendIcon.png);
   background-repeat: no-repeat;
   width: 37px;
@@ -279,10 +339,8 @@ html {
   margin-left: 88px;
   max-width: 900px;
 }
+
 @media only screen and (max-width: 600px) {
-  .example {
-    background: red;
-  }
   .head {
     margin: 40px auto;
   }
@@ -316,27 +374,27 @@ html {
   .photodiary__textContent-span {
     font-size: 12px;
   }
-
   .photodiary {
     margin-left: 0;
   }
-
+  .coments__text {
+    font-size: 12px;
+  }
+  .coments__subtitle {
+    font-size: 12px;
+  }
+  .coments__title {
+    font-size: 20px;
+  }
   .wrapper-section {
     margin-left: 0;
   }
-  .coments__user-name {
-    font-size: 12px;
-  }
-  .coments__user-text {
-    font-size: 12px;
-  }
-  .coments__reply {
-    font-size: 12px;
+  .coments__wrapper {
+    row-gap: 40px;
   }
   .coments__item {
     margin-bottom: 25px;
   }
-
   .fotter__rules {
     padding: 20px 0;
     margin-left: 0;
@@ -356,9 +414,6 @@ html {
 }
 
 @media only screen and (min-width: 600px) {
-  .example {
-    background: green;
-  }
   .head {
     margin: 40px auto;
   }
@@ -372,13 +427,11 @@ html {
   .photodiary {
     margin-left: 44px;
   }
-
   .item__title {
     padding-bottom: 42px;
   }
-  .coments__item {
-    max-width: 360px;
-    width: 100%;
+  .coments__wrapper {
+    justify-content: center;
   }
   .wrapper-section {
     margin-left: 44px;
@@ -388,11 +441,7 @@ html {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .example {
-    background: blue;
-  }
   .photodiary {
     margin-left: 88px;
   }
@@ -400,21 +449,9 @@ html {
     margin-left: 88px;
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
-  .example {
-    background: orange;
-  }
   .photodiary {
     margin-left: 88px;
   }
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {
-    background: pink;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
