@@ -1,0 +1,624 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1062px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.container__small {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin: 76px auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 570px;
+  width: 100%;
+}
+.nav__item-text.logo {
+  font-size: 30px;
+  letter-spacing: 6px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Inconsolata';
+  cursor: pointer;
+}
+.nav__item-text {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #626262;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+  text-align: center;
+  cursor: pointer;
+}
+/* -----------------SLIDER-------------------------------- */
+.slider {
+  text-align: center;
+  margin-bottom: 96px;
+}
+.slider__item {
+  max-width: 1062px;
+  width: 100%;
+  max-height: 509px;
+}
+.slider__wrapper {
+  position: relative;
+  margin-bottom: 96px;
+}
+.arrow {
+  cursor: pointer;
+  border-style: solid;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+}
+#arrow-left {
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent #fff;
+  left: 0;
+  margin-left: 20px;
+}
+#arrow-right {
+  border-width: 10px 0 10px 10px;
+  border-color: transparent #fff transparent #fff;
+  right: 0;
+  margin-right: 20px;
+}
+/* ------------------------------- */
+.photodiary__wrapper {
+  display: flex;
+  max-width: 1062px;
+  width: 100%;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+.photodiary {
+  max-width: 659px;
+  margin-left: 88px;
+}
+.photodiary__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+}
+.photodiary__title {
+  font-size: 30px;
+  color: #626262;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+.photodiary__textContent {
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+}
+.photodiary__textContent-span {
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  font-weight: 700;
+  font-family: 'Playfair Display';
+}
+.album {
+  margin-top: 106px;
+}
+.album__item {
+  margin-bottom: 50px;
+}
+.album__item:last-child {
+  margin-bottom: 55px;
+}
+.album__img {
+  max-width: 660px;
+  width: 100%;
+}
+.description__coments {
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Playfair Display';
+  margin-bottom: 38px;
+}
+.description__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+}
+.description__text-black {
+  font-weight: 700;
+}
+.social-link {
+  margin-top: 105px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 120px;
+}
+.social-link__item {
+  margin-right: 16px;
+}
+.social-link__item:last-child {
+  margin-right: 0;
+}
+.social-link__share {
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+}
+.aside__container {
+  max-width: 272px;
+  width: 100%;
+}
+.aside__about {
+  position: sticky;
+  top: 0;
+}
+.aside__title {
+  font-size: 24px;
+  line-height: 20px;
+  color: #626262;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+  margin: 19px 0;
+}
+.about__img {
+  max-width: 272px;
+  width: 100%;
+}
+.aside__text {
+  font-size: 12px;
+  line-height: 20px;
+  color: #626262;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+  margin-bottom: 23px;
+}
+.aside__contacts-icon {
+  margin-right: 16px;
+}
+.aside__posts {
+  margin-top: 75px;
+}
+.posts__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+  margin-bottom: 36px;
+}
+.posts-item__title {
+  text-decoration: dotted;
+}
+.posts__item {
+  list-style: disc;
+  height: 20px;
+  font-size: 16px;
+  color: #626262;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+  margin-bottom: 49px;
+}
+.posts__item:last-child {
+  margin-bottom: 55px;
+}
+.posts__item::marker {
+  color: #b4ad9e;
+}
+.posts-item__qtycoments {
+  margin-top: 9px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+}
+.aside__baner {
+  max-width: 250px;
+  height: 250px;
+  width: 100%;
+  background-image: url('./img/image8.png');
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.baner__title {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+  text-align: center;
+}
+.baner__sub-title {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+}
+.section-background {
+  background-color: #f5f5f5;
+}
+.memoirs-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+  padding-top: 68px;
+  margin-bottom: 18px;
+}
+.memoirs__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.memoirs__item {
+  margin-right: 37px;
+}
+.item__img {
+  width: 273px;
+  height: 182px;
+  background-color: #f2f2f2;
+}
+.item__title {
+  font-size: 20px;
+  color: #626262;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+  padding-top: 18px;
+  padding-bottom: 84px;
+}
+.coments__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+  margin-top: 66px;
+  margin-bottom: 30px;
+}
+.coments__item {
+  display: flex;
+  margin-bottom: 50px;
+}
+.coments__avatar {
+  margin-right: 36px;
+  font-size: 34px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #cae5e0;
+}
+.coments__avatar-grey {
+  margin-right: 36px;
+  font-size: 34px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #ededea;
+}
+.avatar__content {
+  padding: 16px;
+}
+.coments__user-name {
+  font-size: 14px;
+  color: #626262;
+  font-weight: 700;
+  font-family: 'Playfair Display';
+  margin-bottom: 14px;
+}
+.coments__user-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+}
+.coments__reply {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+  margin-top: 25px;
+}
+.coments__input {
+  width: 100%;
+  border-radius: 5px;
+  height: 70px;
+  border: 1px solid #c8c8c8;
+}
+.coments__input::placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #c8c8c8;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+  padding: 29px 0 31px 34px;
+}
+.coments__content {
+  width: 100%;
+}
+.conection {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 500px;
+  align-items: center;
+}
+.conection__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-weight: 300;
+  font-family: 'Ubuntu';
+  margin-right: 38px;
+}
+.conection__icon:first-child {
+  padding-right: 16px;
+}
+.conection__icon:last-child {
+  filter: invert(1);
+}
+.fotter-background {
+  background-color: #f0f0f0;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fotter__rules {
+  display: flex;
+  column-gap: 17px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+  margin-left: 88px;
+}
+.fotter__links {
+  display: flex;
+  column-gap: 22px;
+}
+.follow__title {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+}
+.follow__icon {
+  filter: invert(1);
+}
+.follow__icon:not(:last-child) {
+  margin-right: 17px;
+}
+.fotter__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+}
+.wrapper-section {
+  margin-left: 88px;
+  max-width: 900px;
+}
+
+@media only screen and (max-width: 600px) {
+  .example {
+    background: red;
+  }
+  .head {
+    margin: 40px auto;
+  }
+  .nav {
+    justify-content: space-around;
+  }
+  .nav__item-text.logo {
+    font-size: 20px;
+  }
+  .nav__item-text {
+    font-size: 10px;
+  }
+  .slider__wrapper {
+    margin-bottom: 50px;
+  }
+  #arrow-left {
+    margin-left: 20px;
+  }
+  #arrow-right {
+    margin-right: 20px;
+  }
+  .photodiary__title {
+    font-size: 20px;
+  }
+  .photodiary__subtitle {
+    font-size: 12px;
+  }
+  .photodiary__textContent {
+    font-size: 12px;
+  }
+  .photodiary__textContent-span {
+    font-size: 12px;
+  }
+  .aside__container {
+    display: none;
+  }
+  .album {
+    margin-top: 53px;
+  }
+  .photodiary {
+    margin-left: 0;
+  }
+  .description__coments {
+    font-size: 12px;
+  }
+  .description__text {
+    font-size: 12px;
+  }
+  .social-link {
+    margin: 25px 0;
+  }
+  .memoirs__item {
+    margin-right: 0;
+  }
+  .memoirs__wrapper {
+    justify-content: center;
+  }
+  .memoirs-title {
+    font-size: 12px;
+    padding-top: 34px;
+  }
+  .item__title {
+    font-size: 16px;
+
+    padding-bottom: 21px;
+  }
+  .wrapper-section{
+    margin-left: 0;
+  }
+  .coments__user-name {
+    font-size: 12px;
+  }
+  .coments__user-text {
+    font-size: 12px;
+  }
+  .coments__reply {
+    font-size: 12px;
+  }
+  .coments__item {
+    margin-bottom: 25px;
+  }
+  .conection {
+    margin-bottom: 100px;
+  }
+  .conection__title {
+    font-size: 12px;
+  }
+  .coments__input {
+    height: 40px;
+  }
+  .coments__input::placeholder {
+    font-size: 12px;
+  }
+  .fotter__rules {
+    padding: 20px 0;
+    margin-left: 0;
+  }
+  .fotter__text {
+    font-size: 12px;
+  }
+  .follow__title {
+    font-size: 12px;
+  }
+  .fotter__links {
+    column-gap: 10px;
+  }
+  .follow__icon:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+  .head {
+    margin: 40px auto;
+  }
+  .slider__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .album {
+    margin-top: 53px;
+    padding-right: 10px;
+  }
+  .photodiary {
+    margin-left: 44px;
+  }
+  .social-link {
+    margin: 50px 0;
+  }
+  .memoirs__wrapper {
+    /* justify-content: center; */
+  }
+  .memoirs__item {
+    margin-right: 20px;
+  }
+  .item__title {
+    padding-bottom: 42px;
+  }
+  .conection {
+    margin-bottom: 100px;
+  }
+  .wrapper-section {
+    margin-left: 44px;
+  }
+  .fotter__rules {
+    padding: 20px 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+  .photodiary {
+    margin-left: 88px;
+  }
+  .wrapper-section {
+    margin-left: 88px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+  .photodiary {
+    margin-left: 88px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}
